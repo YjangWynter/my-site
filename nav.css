@@ -1,0 +1,188 @@
+
+.intro{
+  width: 100vw;
+  height:100vh;
+  display:flex;
+  color:white;
+  align-items:center;
+  text-align: left;
+  /*Below is how you do parallax images. I prefer navbars below*/
+background:linear-gradient(to right, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.2)),url("head-img.jpeg");
+  background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+.intro-inner{
+float:left;
+margin-left: 5%;
+display: inline-block;
+}
+.intro-inner h1{
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.intro-inner h2{
+  font-size: 40px;
+  line-height: 60px;
+}
+.intro-inner p{
+  font-size: 28px;
+  line-height: 60px;
+}
+.btn1 {
+    /* Positioning and sizing */
+    display:inline-block;
+    width: 50%;
+text-align: center;
+font-size: 25px;
+
+    /* Padding and margins */
+    padding: 10em;
+    margin:60px;
+
+    /* Border styles */
+    border: 3px solid white;
+    border-radius: 20px;
+
+
+
+    /* Text styles */
+    text-decoration: none;
+    color:white;
+}
+.btn1:hover{
+  opacity: 0.8;
+  color:black;
+  background: white;
+  border: 3px solid black;
+
+}
+
+
+
+
+/*------------ Navigation Settings: structure, color, alignment----------------*/
+nav{
+  text-align:right;
+  width:100%;
+   overflow: hidden;
+   margin: 0 auto;
+   background-color: white;
+
+}
+
+/*Navigation Menu Settings*/
+.nav-container{
+  margin: 0 auto;
+  text-align: center;
+}
+.logo{
+  width: 100px;
+padding: 30px 120px 1px;
+  float:left;
+  margin-left: 10%;
+  margin-top: 10px;
+}
+
+
+.nav-links ul{
+  padding: 0px;
+    text-align: center;
+    display:inline-block;
+    vertical-align:top;
+    margin-top: 30px;
+    margin-right: 10%;
+    float: right;
+
+
+}
+.nav-links li{
+    list-style-type: none;
+  display:inline;
+  padding: 0px;
+  height: 24px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  display: inline;
+
+
+}
+/*
+----------Sticky Navbar settings-------------*/
+
+.header {
+  color:inherit;
+
+}
+.sticky {
+  position: fixed;
+  position: -webkit-sticky; /* iOS */
+  top:0;
+  width: 100%;
+  height:15vh;
+   z-index: 500;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+
+/* Link colors, effects, and font settings*/
+.nav-links a{
+  margin: 10px;
+  text-decoration:none;
+  font-size: 16px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  line-height: 70px;
+  padding: 5px 15px;
+  color:#0048BA;
+  font-weight: bolder;
+}
+.nav-links a:hover{
+  color: #17E517;
+}
+@media screen and (max-width:600px){
+  .intro{
+    width: 100vw;
+    height: 150vh;
+  }
+  .intro-inner{
+    height:120vh;
+    margin-top: 15vh;
+  }
+  .intro-inner h1{
+    margin-top: 5vh;
+    font-size: 35px;
+  }
+  .intro-inner p{
+    font-size: 18px;
+  }
+  .intro-inner h2{
+    font-size: 25px;
+
+  }
+  .btn1{
+    font-size: 19px;
+    line-height: 2;
+  }
+  .logo{
+    width:70px;
+  }
+  /* Quick fix until I learn how to do collapsible sticky navbars */
+  .nav-links a{
+    display: hidden;
+  }
+}
+@media screen and (max-width:400px){
+  .intro{
+  height: 175vh;
+  }
+  .intro-inner{
+    margin-bottom: 60vh;
+  }
+}
