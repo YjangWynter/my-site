@@ -1,6 +1,7 @@
 
 var i = 0;
-var txt = 'This is my lif3'; /* The text */
+var txt = 'I am using netlify for my site and soon this will be my new site So if you found this link, you are extra special I love you "/<3!"/';
+ /* The text */
 var speed = 50; /* The speed/duration of the effect in milliseconds */
 
 function typeWriter() {
