@@ -1,0 +1,29 @@
+:root{
+    /*B & W*/
+    --l:#FDFFDE;
+    --d:#131313;
+
+    /*Dark & Light blue*/
+    --db:#1E38FF;
+    --lb:#1EB0FF;
+    /*Dark & light green*/
+    --dg:#03A607;
+    --lg:#04FF09;
+    /*Orange & Yellow*/
+    --o: #FFAE08;
+    --y:#FFF500;
+}
+@import url('https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono');
+
+*, html{
+    font-family: 'Ubuntu Mono', monospace;
+    
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    background: var(--d);
+    color: var(--l);
+}
