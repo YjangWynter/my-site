@@ -1,8 +1,8 @@
 
 var i = 0;
-var txt = 'I am using netlify for my site and soon this will be my new site So if you found this link, you are extra special I love you "/<3!"/';
+var txt = 'My name is Yjang Wynter';
  /* The text */
-var speed = 50; /* The speed/duration of the effect in milliseconds */
+var speed = 82; /* The speed/duration of the effect in milliseconds */
 
 function typeWriter() {
     if (i < txt.length) {
