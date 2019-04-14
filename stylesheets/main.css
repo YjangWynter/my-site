@@ -2,3 +2,9 @@ main{
     display: flex;
     
 }
+nav{
+    background-color:var(--darker);
+}
+#logo{
+    width:5%;
+}

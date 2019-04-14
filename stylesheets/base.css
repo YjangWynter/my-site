@@ -1,17 +1,12 @@
 :root{
     /*B & W*/
-    --l:#FDFFDE;
-    --d:#131313;
+    --darker:#070707;
+    --light:#f4f4f4;
+    --dark:#262625;
 
     /*Dark & Light blue*/
-    --db:#1E38FF;
-    --lb:#1EB0FF;
-    /*Dark & light green*/
-    --dg:#03A607;
-    --lg:#04FF09;
-    /*Orange & Yellow*/
-    --o: #FFAE08;
-    --y:#FFF500;
+    --sea:#1E38FF;
+    --forest:;
 }
 @import url('https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono');
 
@@ -24,6 +19,6 @@ h1,h2,h3,h4,h5,h6{
 }
 
 body{
-    background: var(--d);
-    color: var(--l);
+    background: var(--darker);
+    color: var(--light);
 }
