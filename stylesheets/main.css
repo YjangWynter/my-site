@@ -177,6 +177,7 @@ section h2 {
 }
 
 #mainNav {
+  
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-weight: 700;
@@ -194,6 +195,7 @@ section h2 {
 
 #mainNav .navbar-nav li.nav-item a.nav-link {
   color: #fff;
+  text-decoration: none;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
@@ -408,14 +410,16 @@ form .row:first-child .floating-label-form-group {
   background-color: var(--darker);
 }
 
-a {
-  color: var(--forest);
+a, a:active,a:focus {
+  color:var(--light); 
+   text-decoration: underline;
 }
 
-a:focus, a:hover, a:active {
-  color: var(--light);
+a:hover {
+  color: var(--sea);
   text-decoration: none;
 }
+a
 
 .btn {
   border-width: 2px;
@@ -426,7 +430,7 @@ a:focus, a:hover, a:active {
 }
 
 .bg-secondary {
-  background-color: var(--sea) !important;
+  background-color: var(--dark) !important;
 }
 
 .text-primary {
@@ -440,11 +444,13 @@ a:focus, a:hover, a:active {
 .btn-primary {
   background-color: var(--forest);
   border-color: var(--forest);
+  text-decoration: none;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background-color: var(--sea);
   border-color: var(--sea);
+  text-decoration: none;
 }
 
 .btn-secondary {
@@ -453,8 +459,8 @@ a:focus, a:hover, a:active {
 }
 
 .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
-  background-color: #1a252f;
-  border-color: #1a252f;
+  background-color: var(--darker);
+  border-color: var(--darker);
 }
 .modal-text{
   color:var(--light);
@@ -481,13 +487,22 @@ background-color:var(--darker);
 }
 .btn-outline-success{
   color:var(--light);
+  text-decoration:none;
+  
 }
+
 .btn-outline-success:hover {
-  background-color: var(--sea);
-  border-color: var(--sea);
+  background-color: var(--darker);
+  border-color: var(--darker);
 }
 .btn-outline-success:after {
 color:var(--light);
 opacity: 0.9; 
 border-color: var(--forest);
+}
+
+#profile-2{
+  width:100%;
+  border-radius: 10%;
+ 
 }
