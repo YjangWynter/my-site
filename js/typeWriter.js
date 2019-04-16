@@ -2,7 +2,7 @@
 var i = 0;
 var txt = 'My name is Yjang Wynter';
  /* The text */
-var speed = 82; /* The speed/duration of the effect in milliseconds */
+var speed = 80; /* The speed/duration of the effect in milliseconds */
 
 function typeWriter() {
     if (i < txt.length) {
