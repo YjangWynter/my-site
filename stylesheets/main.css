@@ -74,6 +74,10 @@ h6 {
   font-weight: bold;
 }
 
+.line{
+  line-height:1px;
+}
+
 /* Little Star CSS */
 hr.star-light-grey,
 hr.star-light-forest,
