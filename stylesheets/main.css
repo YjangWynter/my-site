@@ -58,6 +58,21 @@ h5,
 h6 {
   font-family: 'Ubuntu', sans-serif;
 }
+.banner {
+  display: flex;
+  height: 60rem;
+  align-items: center;
+  text-align: left;
+  /*Parallax effect.*/
+  /* Linear Gradient overlay*/
+
+  /* Centering and preventing image repetition of background image */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-weight: bold;
+}
 
 /* Little Star CSS */
 hr.star-light-grey,
@@ -88,7 +103,7 @@ hr.star-dark:after {
 }
 
 hr.star-light-grey {
-  border-color: #fff;
+  border-color:var(--light);
 }
 
 hr.star-light-grey:after {
@@ -96,7 +111,7 @@ hr.star-light-grey:after {
   background-color: var(--dark);
 }
 hr.star-light-forest {
-  border-color: #fff;
+  border-color: var(--light);
 }
 
 hr.star-light-forest:after {
@@ -161,7 +176,7 @@ section h2 {
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-weight: 700;
-  font-family: 'Montserrat';
+  font-family: 'Ubuntu';
 }
 
 #mainNav .navbar-brand {
@@ -394,7 +409,7 @@ a {
 }
 
 a:focus, a:hover, a:active {
-  color: var(--sea);
+  color: var(--light);
   text-decoration: none;
 }
 
@@ -407,7 +422,7 @@ a:focus, a:hover, a:active {
 }
 
 .bg-secondary {
-  background-color: #2C3E50 !important;
+  background-color: var(--sea) !important;
 }
 
 .text-primary {
@@ -429,7 +444,7 @@ a:focus, a:hover, a:active {
 }
 
 .btn-secondary {
-  background-color: var;
+  background-color: var(--forest);
   border-color: #2C3E50;
 }
 
@@ -438,7 +453,8 @@ a:focus, a:hover, a:active {
   border-color: #1a252f;
 }
 .modal-text{
-  color:var(--dark);
+  color:var(--light);
+  font-size:20px;
 }
 .bg-light {
   background-color: var(--light);
@@ -458,4 +474,16 @@ background-color:var(--darker);
     width:250px;
     border-radius: 50%;
     background: linear-gradient(#fff, #fff);
+}
+.btn-outline-success{
+  color:var(--light);
+}
+.btn-outline-success:hover {
+  background-color: var(--sea);
+  border-color: var(--sea);
+}
+.btn-outline-success:after {
+color:var(--light);
+opacity: 0.9; 
+border-color: var(--forest);
 }
