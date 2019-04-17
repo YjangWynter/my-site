@@ -291,7 +291,7 @@ header.masthead h2 {
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
   opacity: 0;
-  background-color: var(--forest);
+  background-color: var(--sea);
 }
 
 .portfolio .portfolio-item .portfolio-item-caption:hover {
@@ -454,8 +454,8 @@ a
 }
 
 .btn-secondary {
-  background-color: var(--forest);
-  border-color: #2C3E50;
+  background-color: var(--darker);
+  border-color: darker;
 }
 
 .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
@@ -509,3 +509,4 @@ border-color: var(--forest);
 #for-bots{
   border-color: var(--darker);
   background: var(--darker);}
+ 
