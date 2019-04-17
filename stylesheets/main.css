@@ -506,3 +506,6 @@ border-color: var(--forest);
   border-radius: 10%;
  
 }
+#for-bots{
+  border-color: var(--darker);
+  background: var(--darker);}

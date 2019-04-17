@@ -301,9 +301,7 @@
                   data-validation-required-message="Please enter your phone number."> Front-end Development <br>
                 <input type="checkbox" name="choices"
                   data-validation-required-message="Please enter your phone number."> Logo Design <br>
-                <p class="hidden">
-                  <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-                </p>
+                <br>
               </div>
             </div>
             <div class="control-group">
@@ -318,8 +316,11 @@
             <br>
             <div id="success"></div>
             <div class="form-group">
-
+                
               <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Send</button>
+              <p class="hidden">
+                <input id="for-bots" name="bot-field" />
+              </p>
             </div>
           </form>
         </div>
@@ -373,6 +374,7 @@
     <div id="copyright" class="container">
       <br />
     </div>
+   
   </div>
 
   <!---Portfolio Items -->
