@@ -508,5 +508,7 @@ border-color: var(--forest);
 }
 #for-bots{
   border-color: var(--darker);
-  background: var(--darker);}
+  background: var(--darker);
+  display: none;
+}
  
