@@ -19,7 +19,7 @@ h6 {
 }
 
 body {
-  background: var(--darker);
+  background: #070707;
   color: var(--light);
   font-family: 'Ubuntu Mono', monospace;
 }
