@@ -3,9 +3,26 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-freelancer/blob/master/LICENSE)
  */
+
+ @import url('https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono');
+
+:root {
+  /*B & W*/
+  --darker: #070707;
+  --light: #f4f4f4;
+  --dark: #262625;
+
+  /*Dark & Light blue*/
+  --sea: #1E38FF;
+  --forest: #1da526;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono');
+
 *,
 html {
   font-family: 'Ubuntu Mono', monospace;
+
 }
 
 h1,
@@ -21,102 +38,44 @@ h6 {
 body {
   background: var(--darker);
   color: var(--light);
-  font-family: 'Ubuntu Mono', monospace;
-}
+  font-family: 'Ubuntu Mono',
+  monospace;
+  }
 
-a,
-a:active,
-a:focus {
-  color: var(--light);
-  text-decoration: underline;
-}
-
-a:hover {
-  color: var(--sea);
-  text-decoration: none;
-}
-
-a .btn {
-  border-width: 2px;
-}
-
-.bg-primary {
-  background-color: var(--forest) !important;
-}
-
-.bg-secondary {
-  background-color: var(--dark) !important;
-}
-
-.text-primary {
-  color: var(--forest) !important;
-}
-
-.text-secondary {
-  color: #2C3E50 !important;
-}
-
-.btn-primary {
-  background-color: var(--forest);
-  border-color: var(--forest);
-  text-decoration: none;
-}
-
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active {
-  background-color: var(--sea);
-  border-color: var(--sea);
-  text-decoration: none;
-}
-
-.btn-secondary {
-  background-color: var(--darker);
-  border-color: darker;
-}
-
-.btn-secondary:hover,
-.btn-secondary:focus,
-.btn-secondary:active {
-  background-color: var(--darker);
-  border-color: var(--darker);
-}
-
-.modal-text {
-  color: var(--light);
-  font-size: 20px;
-}
-
-.bg-light {
-  background-color: var(--light);
-}
-
-.bg-med-dark {
-  background-color: var(--dark);
-}
-
-.bg-darker {
+nav {
   background-color: var(--darker);
 }
 
-.btn-outline-success {
-  color: var(--light);
-  text-decoration: none;
+#logo {
+  width: 69px;
 }
 
-.btn-outline-success:hover {
-  background-color: var(--darker);
-  border-color: var(--darker);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Ubuntu', sans-serif;
+}
+.banner {
+  display: flex;
+  height: 60rem;
+  align-items: center;
+  text-align: left;
+  /*Parallax effect.*/
+  /* Linear Gradient overlay*/
+
+  /* Centering and preventing image repetition of background image */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-weight: bold;
 }
 
-.btn-outline-success:after {
-  color: var(--light);
-  opacity: 0.9;
-  border-color: var(--forest);
-}
-
-.line {
-  line-height: 1px;
+.line{
+  line-height:1px;
 }
 
 /* Little Star CSS */
@@ -148,14 +107,13 @@ hr.star-dark:after {
 }
 
 hr.star-light-grey {
-  border-color: var(--light);
+  border-color:var(--light);
 }
 
 hr.star-light-grey:after {
   color: var(--light);
   background-color: var(--dark);
 }
-
 hr.star-light-forest {
   border-color: var(--light);
 }
@@ -165,6 +123,7 @@ hr.star-light-forest:after {
   background-color: var(--forest);
 }
 
+
 hr.star-dark {
   border-color: var(--light);
 }
@@ -172,10 +131,6 @@ hr.star-dark {
 hr.star-dark:after {
   color: var(--light);
   background-color: var(--darker);
-}
-
-#logo {
-  width: 69px;
 }
 
 section {
@@ -206,10 +161,6 @@ section h2 {
   line-height: 2rem;
 }
 
-nav {
-  background-color: var(--darker);
-}
-
 .scroll-to-top {
   z-index: 1042;
   right: 1rem;
@@ -226,6 +177,7 @@ nav {
 }
 
 #mainNav {
+  
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-weight: 700;
@@ -250,8 +202,7 @@ nav {
   color: var(--forest);
 }
 
-#mainNav .navbar-nav li.nav-item a.nav-link:active,
-#mainNav .navbar-nav li.nav-item a.nav-link:focus {
+#mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
   color: #fff;
 }
 
@@ -283,9 +234,7 @@ nav {
     color: #fff;
     background: var(--forest);
   }
-  #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active,
-  #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus,
-  #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
+  #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: #fff;
     background: var(--forest);
   }
@@ -296,25 +245,6 @@ nav {
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.5em;
   }
-}
-
-.banner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 60rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: left;
-  /*Parallax effect.*/
-  /* Linear Gradient overlay*/
-  /* Centering and preventing image repetition of background image */
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  font-weight: bold;
 }
 
 header.masthead {
@@ -344,22 +274,6 @@ header.masthead h2 {
   header.masthead h2 {
     font-size: 1.75em;
   }
-}
-
-#profile {
-  /* IE 9 */
-  -webkit-transform: rotate(90deg);
-  /* Safari 3-8 */
-  transform: rotate(90deg);
-  width: 250px;
-  border-radius: 50%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff));
-  background: linear-gradient(#fff, #fff);
-}
-
-#profile-2 {
-  width: 100%;
-  border-radius: 10%;
 }
 
 .portfolio {
@@ -485,12 +399,6 @@ form .row:first-child .floating-label-form-group {
   border-top: 1px solid #e9ecef;
 }
 
-#for-bots {
-  border-color: var(--darker);
-  background: var(--darker);
-  display: none;
-}
-
 .footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -501,4 +409,106 @@ form .row:first-child .floating-label-form-group {
 .copyright {
   background-color: var(--darker);
 }
-/*# sourceMappingURL=main.css.map */
+
+a, a:active,a:focus {
+  color:var(--light); 
+   text-decoration: underline;
+}
+
+a:hover {
+  color: var(--sea);
+  text-decoration: none;
+}
+a
+
+.btn {
+  border-width: 2px;
+}
+
+.bg-primary {
+  background-color: var(--forest) !important;
+}
+
+.bg-secondary {
+  background-color: var(--dark) !important;
+}
+
+.text-primary {
+  color: var(--forest) !important;
+}
+
+.text-secondary {
+  color: #2C3E50 !important;
+}
+
+.btn-primary {
+  background-color: var(--forest);
+  border-color: var(--forest);
+  text-decoration: none;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background-color: var(--sea);
+  border-color: var(--sea);
+  text-decoration: none;
+}
+
+.btn-secondary {
+  background-color: var(--darker);
+  border-color: darker;
+}
+
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+  background-color: var(--darker);
+  border-color: var(--darker);
+}
+.modal-text{
+  color:var(--light);
+  font-size:20px;
+}
+.bg-light {
+  background-color: var(--light);
+}
+.bg-med-dark{
+background-color:var(--dark);
+}
+.bg-darker{
+background-color:var(--darker);
+}
+#profile{
+    -ms-transform: rotate(90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(90deg);
+    /* Safari 3-8 */
+    transform: rotate(90deg);
+    width:250px;
+    border-radius: 50%;
+    background: linear-gradient(#fff, #fff);
+}
+.btn-outline-success{
+  color:var(--light);
+  text-decoration:none;
+  
+}
+
+.btn-outline-success:hover {
+  background-color: var(--darker);
+  border-color: var(--darker);
+}
+.btn-outline-success:after {
+color:var(--light);
+opacity: 0.9; 
+border-color: var(--forest);
+}
+
+#profile-2{
+  width:100%;
+  border-radius: 10%;
+ 
+}
+#for-bots{
+  border-color: var(--darker);
+  background: var(--darker);
+  display: none;
+}
+ 
