@@ -25,7 +25,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg bg-darker fixed-top text-uppercase" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img id="logo" src="img/Logo.png"
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img id="logo-brand" src="img/Logo.png"
           alt="Yjang WYnter's Logo"></a>
       <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button"
         data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
@@ -272,7 +272,7 @@
           <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
           <form name="Message from your website" id="contactForm" method="POST" netlify-honeypot="bot-field"
             data-netlify="true">
-
+            <fieldset>
             <div class="control-group">
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
                 <label>Name</label>
@@ -301,14 +301,14 @@
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
                 <h6><br>Why did you want to say hi?</h6>
                 <br>
-                <input type="checkbox" name="job" id="design" value="Front-end Design & Style Guide"
-                  data-validation-required-message="Please enter your phone number."> Front-end Design & Style Guide
+                <input type="checkbox" name="job[]" id="design" value="design"
+                  data-validation-required-message="Please enter your phone number."/> Front-end Design & Style Guide
                 <br>
-                <input type="checkbox" name="job" id="development" value="Front-end Development"
-                  data-validation-required-message="Please enter your phone number."> Front-end Development 
+                <input type="checkbox" name="job[]" id="development" value="development"
+                  data-validation-required-message="Please enter your phone number."/> Front-end Development 
                   <br>
-                <input type="checkbox" name="job" id="logo" value="Logo Design"
-                  data-validation-required-message="Please enter your phone number."> Logo Design <br>
+                <input type="checkbox" name="job[]" id="logo" value="logo"
+                  data-validation-required-message="Please enter your phone number."/> Logo Design
                 <br>
               </div>
             </div>
@@ -330,6 +330,7 @@
                 <input id="for-bots" name="bot-field" />
               </p>
             </div>
+            </fieldset>
           </form>
         </div>
       </div>

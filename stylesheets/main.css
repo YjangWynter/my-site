@@ -46,7 +46,7 @@ nav {
   background-color: var(--darker);
 }
 
-#logo {
+#logo-brand {
   width: 69px;
 }
 
@@ -420,7 +420,9 @@ a:hover {
   text-decoration: none;
 }
 a
-
+  label{
+  color: var(--light);
+}
 .btn {
   border-width: 2px;
 }
