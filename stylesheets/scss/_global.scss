@@ -1,0 +1,188 @@
+body {
+    background: map-get($colors, darker);
+    color: var(--light);
+    font-family: 'Ubuntu Mono',
+        monospace;
+}
+
+a,
+a:active,
+a:focus {
+    color: map-get($colors, light);
+    text-decoration: underline;
+}
+
+a:hover {
+    color: map-get($colors, sea);
+    text-decoration: none;
+}
+
+a .btn {
+    border-width: 2px;
+}
+
+.bg-primary {
+    background-color: map-get($colors, forest) !important;
+}
+
+.bg-secondary {
+    background-color: map-get($colors, dark) !important;
+}
+
+.text-primary {
+    color: map-get($colors, forest) !important;
+}
+
+.text-secondary {
+    color: map-get($colors, dark) !important;
+}
+
+.btn-primary {
+    background-color: map-get($colors, forest);
+    border-color: map-get($colors, forest);
+    text-decoration: none;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: map-get($colors, sea);
+    border-color: map-get($colors, sea);
+    text-decoration: none;
+}
+
+.btn-secondary {
+    background-color: map-get($colors, darker);
+    border-color: map-get($colors, darker);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active {
+    background-color: map-get($colors, darker);
+    border-color: map-get($colors, darker);
+}
+
+.modal-text {
+    color: map-get($colors, light);
+    font-size: 20px;
+}
+
+.bg-light {
+    background-color: map-get($colors, light);
+}
+
+.bg-med-dark {
+    background-color: map-get($colors, dark);
+}
+
+.bg-darker {
+    background-color: map-get($colors, darker);
+}
+.btn-outline-success {
+    color: map-get($colors, light);
+    text-decoration: none;
+
+}
+
+.btn-outline-success:hover {
+    background-color: map-get($colors, darker);
+    border-color: map-get($colors, darker);
+}
+
+.btn-outline-success:after {
+    color: map-get($colors, light);
+    opacity: 0.9;
+    border-color: map-get($colors, forest);
+}
+.line {
+    line-height: 1px;
+}
+
+/* Little Star CSS */
+hr.star-light-grey,
+hr.star-light-forest,
+hr.star-dark {
+    max-width: 15rem;
+    padding: 0;
+    text-align: center;
+    border: none;
+    border-top: solid 0.25rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+hr.star-light-grey:after,
+hr.star-light-forest:after,
+hr.star-dark:after {
+    position: relative;
+    top: -.8em;
+    display: inline-block;
+    padding: 0 0.25em;
+    content: '\f005';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 2em;
+}
+
+hr.star-light-grey {
+    border-color: map-get($colors, light);
+}
+
+hr.star-light-grey:after {
+    color: map-get($colors, light);
+    background-color: map-get($colors, dark);
+}
+
+hr.star-light-forest {
+    border-color: map-get($colors, light);
+}
+
+hr.star-light-forest:after {
+    color: map-get($colors, light);
+    background-color: map-get($colors, forest);
+}
+
+
+hr.star-dark {
+    border-color: map-get($colors, light);
+}
+
+hr.star-dark:after {
+    color: map-get($colors, light);
+    background-color: map-get($colors, darker);
+}
+#logo {
+    width: 69px;
+}
+
+
+section {
+    padding: 6rem 0;
+}
+
+section h2 {
+    font-size: 2.25rem;
+    line-height: 2rem;
+}
+
+@media (min-width: 992px) {
+    section h2 {
+        font-size: 3rem;
+        line-height: 2.5rem;
+    }
+}
+
+.btn-xl {
+    padding: 1rem 1.75rem;
+    font-size: 1.25rem;
+}
+
+.btn-social {
+    width: 3.25rem;
+    height: 3.25rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
+}

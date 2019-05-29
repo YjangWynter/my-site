@@ -1,0 +1,80 @@
+nav {
+    background-color: map-get($colors, darker);
+}
+
+.scroll-to-top {
+    z-index: 1042;
+    right: 1rem;
+    bottom: 1rem;
+    display: none;
+ a {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: map-get($colors, darker);
+    opacity: 0.8;
+    line-height: 3.1rem;
+    }
+}
+
+#mainNav {
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: 700;
+    font-family: 'Ubuntu';
+    .navbar-brand,
+    .navbar-nav li.nav-item a.nav-link:active,
+    .navbar-nav li.nav-item a.nav-link:focus {
+        color: map-get($colors, bright);
+    }
+    .navbar-nav {
+    margin-top: 1rem;
+    letter-spacing: 0.0625rem;
+    }
+    .navbar-nav, li.nav-item, a.nav-link {
+    color: map-get($colors, bright);
+    
+    text-decoration: none;
+    }
+    .navbar-nav li.nav-item a.nav-link.active,
+    .navbar-nav li.nav-item a.nav-link:hover {
+    color: map-get($colors, forest);
+    
+    }
+    .navbar-toggler {
+    font-size: 80%;
+    padding: 0.8rem;
+    }
+
+
+@media (min-width: 992px) {
+   
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    .navbar-nav {
+        margin-top: 0;
+    }
+     .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: font-size 0.3s;
+        transition: font-size 0.3s;
+    }
+     .navbar-shrink {
+         padding-top: 0.5rem;
+         padding-bottom: 0.5rem;
+     }
+
+     .navbar-shrink .navbar-brand {
+         font-size: 1.5em;
+     }
+    .navbar-nav>li.nav-item>a.nav-link.active, 
+   .navbar-nav>li.nav-item>a.nav-link.active:active,
+    .navbar-nav>li.nav-item>a.nav-link.active:focus,
+     .navbar-nav>li.nav-item>a.nav-link.active:hover {
+        color: map-get($colors, bright);
+        background: map-get($colors, forest);
+        
+        }
+    }
+}

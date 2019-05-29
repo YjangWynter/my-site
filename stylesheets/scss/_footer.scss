@@ -1,0 +1,10 @@
+.footer {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: map-get($colors, dark);
+    color: map-get($colors, light);
+}
+
+.copyright {
+    background-color: map-get($colors, darker);
+}
