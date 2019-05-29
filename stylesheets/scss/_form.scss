@@ -1,8 +1,7 @@
 .floating-label-form-group {
     position: relative;
-    border-bottom: 1px solid #e9ecef;
+    border-bottom: 1px solid map-get($colors, light);
 }
-
 .floating-label-form-group input,
 .floating-label-form-group textarea {
     font-size: 1.5em;
@@ -28,14 +27,12 @@
     margin: 0;
     -webkit-transition: top 0.3s ease, opacity 0.3s ease;
     transition: top 0.3s ease, opacity 0.3s ease;
-    vertical-align: middle;
-    vertical-align: baseline;
     opacity: 0;
 }
 
 .floating-label-form-group:not(:first-child) {
     padding-left: 14px;
-    border-left: 1px solid #e9ecef;
+    border-left: 1px solid map-get($colors, light);
 }
 
 .floating-label-form-group-with-value label {
@@ -44,14 +41,14 @@
 }
 
 .floating-label-form-group-with-focus label {
-    color: var(--forest);
+    color: map-get($colors, forest);
 }
 
 form .row:first-child .floating-label-form-group {
-    border-top: 1px solid #e9ecef;
+    border-top: 1px solid map-get($colors, light);
 }
 #for-bots {
-    border-color: var(--darker);
-    background: var(--darker);
+    border-color: map-get($colors, darker);
+    background: map-get($colors, darker);
     display: none;
 }

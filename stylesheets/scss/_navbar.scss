@@ -1,5 +1,5 @@
 nav {
-    background-color: var(--darker);
+    background-color: map-get($colors, darker);
 }
 
 .scroll-to-top {
@@ -7,14 +7,13 @@ nav {
     right: 1rem;
     bottom: 1rem;
     display: none;
-}
-
-.scroll-to-top a {
+ a {
     width: 3.5rem;
     height: 3.5rem;
-    background-color: var(--darker);
+    background-color: map-get($colors, darker);
     opacity: 0.8;
     line-height: 3.1rem;
+    }
 }
 
 #mainNav {
@@ -23,76 +22,59 @@ nav {
     padding-bottom: 1rem;
     font-weight: 700;
     font-family: 'Ubuntu';
-}
-
-#mainNav .navbar-brand {
-    color: #fff;
-}
-
-#mainNav .navbar-nav {
+    .navbar-brand,
+    .navbar-nav li.nav-item a.nav-link:active,
+    .navbar-nav li.nav-item a.nav-link:focus {
+        color: map-get($colors, bright);
+    }
+    .navbar-nav {
     margin-top: 1rem;
     letter-spacing: 0.0625rem;
-}
-
-#mainNav .navbar-nav li.nav-item a.nav-link {
-    color: #fff;
+    }
+    .navbar-nav, li.nav-item, a.nav-link {
+    color: map-get($colors, bright);
+    
     text-decoration: none;
-}
-
-#mainNav .navbar-nav li.nav-item a.nav-link:hover {
-    color: var(--forest);
-}
-
-#mainNav .navbar-nav li.nav-item a.nav-link:active,
-#mainNav .navbar-nav li.nav-item a.nav-link:focus {
-    color: #fff;
-}
-
-#mainNav .navbar-nav li.nav-item a.nav-link.active {
-    color: var(--forest);
-}
-
-#mainNav .navbar-toggler {
+    }
+    .navbar-nav li.nav-item a.nav-link.active,
+    .navbar-nav li.nav-item a.nav-link:hover {
+    color: map-get($colors, forest);
+    
+    }
+    .navbar-toggler {
     font-size: 80%;
     padding: 0.8rem;
-}
-
-@media (min-width: 992px) {
-    #mainNav {
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
-        -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
-        transition: padding-top 0.3s, padding-bottom 0.3s;
     }
 
-    #mainNav .navbar-brand {
+
+@media (min-width: 992px) {
+   
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    .navbar-nav {
+        margin-top: 0;
+    }
+     .navbar-brand {
         font-size: 2em;
         -webkit-transition: font-size 0.3s;
         transition: font-size 0.3s;
     }
+     .navbar-shrink {
+         padding-top: 0.5rem;
+         padding-bottom: 0.5rem;
+     }
 
-    #mainNav .navbar-nav {
-        margin-top: 0;
-    }
-
-    #mainNav .navbar-nav>li.nav-item>a.nav-link.active {
-        color: #fff;
-        background: var(--forest);
-    }
-
-    #mainNav .navbar-nav>li.nav-item>a.nav-link.active:active,
-    #mainNav .navbar-nav>li.nav-item>a.nav-link.active:focus,
-    #mainNav .navbar-nav>li.nav-item>a.nav-link.active:hover {
-        color: #fff;
-        background: var(--forest);
-    }
-
-    #mainNav.navbar-shrink {
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-    }
-
-    #mainNav.navbar-shrink .navbar-brand {
-        font-size: 1.5em;
+     .navbar-shrink .navbar-brand {
+         font-size: 1.5em;
+     }
+    .navbar-nav>li.nav-item>a.nav-link.active, 
+   .navbar-nav>li.nav-item>a.nav-link.active:active,
+    .navbar-nav>li.nav-item>a.nav-link.active:focus,
+     .navbar-nav>li.nav-item>a.nav-link.active:hover {
+        color: map-get($colors, bright);
+        background: map-get($colors, forest);
+        
+        }
     }
 }

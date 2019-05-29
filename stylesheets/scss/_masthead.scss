@@ -54,7 +54,7 @@ header.masthead h2 {
     transform: rotate(90deg);
     width: 250px;
     border-radius: 50%;
-    background: linear-gradient(#fff, #fff);
+    background: linear-gradient(map-get($colors, bright), map-get($colors, bright));
 }
 
 

@@ -1,5 +1,5 @@
 body {
-    background: color(darker);
+    background: map-get($colors, darker);
     color: var(--light);
     font-family: 'Ubuntu Mono',
         monospace;
@@ -8,12 +8,12 @@ body {
 a,
 a:active,
 a:focus {
-    color: var(--light);
+    color: map-get($colors, light);
     text-decoration: underline;
 }
 
 a:hover {
-    color: var(--sea);
+    color: map-get($colors, sea);
     text-decoration: none;
 }
 
@@ -22,78 +22,78 @@ a .btn {
 }
 
 .bg-primary {
-    background-color: var(--forest) !important;
+    background-color: map-get($colors, forest) !important;
 }
 
 .bg-secondary {
-    background-color: var(--dark) !important;
+    background-color: map-get($colors, dark) !important;
 }
 
 .text-primary {
-    color: var(--forest) !important;
+    color: map-get($colors, forest) !important;
 }
 
 .text-secondary {
-    color: #2C3E50 !important;
+    color: map-get($colors, dark) !important;
 }
 
 .btn-primary {
-    background-color: var(--forest);
-    border-color: var(--forest);
+    background-color: map-get($colors, forest);
+    border-color: map-get($colors, forest);
     text-decoration: none;
 }
 
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-    background-color: var(--sea);
-    border-color: var(--sea);
+    background-color: map-get($colors, sea);
+    border-color: map-get($colors, sea);
     text-decoration: none;
 }
 
 .btn-secondary {
-    background-color: var(--darker);
-    border-color: darker;
+    background-color: map-get($colors, darker);
+    border-color: map-get($colors, darker);
 }
 
 .btn-secondary:hover,
 .btn-secondary:focus,
 .btn-secondary:active {
-    background-color: var(--darker);
-    border-color: var(--darker);
+    background-color: map-get($colors, darker);
+    border-color: map-get($colors, darker);
 }
 
 .modal-text {
-    color: var(--light);
+    color: map-get($colors, light);
     font-size: 20px;
 }
 
 .bg-light {
-    background-color: var(--light);
+    background-color: map-get($colors, light);
 }
 
 .bg-med-dark {
-    background-color: var(--dark);
+    background-color: map-get($colors, dark);
 }
 
 .bg-darker {
-    background-color: var(--darker);
+    background-color: map-get($colors, darker);
 }
 .btn-outline-success {
-    color: var(--light);
+    color: map-get($colors, light);
     text-decoration: none;
 
 }
 
 .btn-outline-success:hover {
-    background-color: var(--darker);
-    border-color: var(--darker);
+    background-color: map-get($colors, darker);
+    border-color: map-get($colors, darker);
 }
 
 .btn-outline-success:after {
-    color: var(--light);
+    color: map-get($colors, light);
     opacity: 0.9;
-    border-color: var(--forest);
+    border-color: map-get($colors, forest);
 }
 .line {
     line-height: 1px;
@@ -128,31 +128,31 @@ hr.star-dark:after {
 }
 
 hr.star-light-grey {
-    border-color: var(--light);
+    border-color: map-get($colors, light);
 }
 
 hr.star-light-grey:after {
-    color: var(--light);
-    background-color: var(--dark);
+    color: map-get($colors, light);
+    background-color: map-get($colors, dark);
 }
 
 hr.star-light-forest {
-    border-color: var(--light);
+    border-color: map-get($colors, light);
 }
 
 hr.star-light-forest:after {
-    color: var(--light);
-    background-color: var(--forest);
+    color: map-get($colors, light);
+    background-color: map-get($colors, forest);
 }
 
 
 hr.star-dark {
-    border-color: var(--light);
+    border-color: map-get($colors, light);
 }
 
 hr.star-dark:after {
-    color: var(--light);
-    background-color: var(--darker);
+    color: map-get($colors, light);
+    background-color: map-get($colors, darker);
 }
 #logo {
     width: 69px;
