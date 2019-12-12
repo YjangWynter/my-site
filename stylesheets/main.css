@@ -17,8 +17,6 @@
   --forest: #1da526;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono');
-
 *,
 html {
   font-family: 'Ubuntu Mono', monospace;
