@@ -33,4 +33,3 @@ else if (window.attachEvent) // Microsoft
     window.attachEvent('onload', typeWriter);
     window.attachEvent('onload', copyright);
 }
-console.log('dicks');
