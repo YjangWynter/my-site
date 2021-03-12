@@ -437,9 +437,9 @@ header.masthead h2 {
 
 #profile {
   /* IE 9 */
-  -webkit-transform: rotate(90deg);
+  -webkit-transform: rotate(-90deg);
   /* Safari 3-8 */
-  transform: rotate(90deg);
+  transform: rotate(-90deg);
   width: 250px;
   border-radius: 50%;
   background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff));
@@ -1104,11 +1104,11 @@ background-color:var(--dark);
 background-color:var(--darker);
 }
 #profile{
-    -ms-transform: rotate(90deg);
-    /* IE 9 */
-    -webkit-transform: rotate(90deg);
-    /* Safari 3-8 */
-    transform: rotate(90deg);
+  -ms-transform: rotate(-90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-90deg);
+  /* Safari 3-8 */
+  transform: rotate(-90deg);
     width:250px;
     border-radius: 50%;
     background: linear-gradient(#fff, #fff);
