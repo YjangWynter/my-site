@@ -13,7 +13,7 @@
     -webkit-transition: all ease 0.5s;
     transition: all ease 0.5s;
     opacity: 0;
-    background-color: map-get($colors, sea);
+    background-color: map-get($colors, backwood);
 }
 
 .portfolio .portfolio-item .portfolio-item-caption:hover {

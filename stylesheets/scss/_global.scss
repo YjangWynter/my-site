@@ -13,7 +13,7 @@ a:focus {
 }
 
 a:hover {
-    color: map-get($colors, sea);
+    color: map-get($colors, backwood);
     text-decoration: none;
 }
 
@@ -46,8 +46,8 @@ a .btn {
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-    background-color: map-get($colors, sea);
-    border-color: map-get($colors, sea);
+    background-color: map-get($colors, backwood);
+    border-color: map-get($colors, backwood);
     text-decoration: none;
 }
 
