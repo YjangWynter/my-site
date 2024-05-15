@@ -1,1 +1,1 @@
-This is the current repo for YjangWynter.com  made with the [Freelancer](http://startbootstrap.com/template-overviews/freelancer/) Bootstrap theme. This is will soon be abandoned for a new design I have planned, but will make some minor edits for a class assignment. ETA on launch of new site is 3/20
+This is the current repo for YjangWynter.com 
