@@ -375,12 +375,20 @@ header.masthead h2 {
   line-height: 1.764705882em;
   position: relative;
   z-index: 0;
-  top: 2em;
-  display: block;
-  margin: 0;
+  display: flex;
+  margin: auto;
   -webkit-transition: top 0.3s ease, opacity 0.3s ease;
   transition: top 0.3s ease, opacity 0.3s ease;
-  opacity: 0;
+}
+.floating-label-form-group > .row > input[type="checkbox"]{
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.floating-label-form-group > .row{
+  display: inline-flex;
+  flex-direction: row;
+  margin-inline: 1rem;
 }
 
 .floating-label-form-group:not(:first-child) {

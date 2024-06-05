@@ -219,7 +219,7 @@
         <div class="col-lg-7 mx-auto my-auto">
           <div class="text-center mt-4">
             <p class="lead">Hey there! 👋🏾 I'm Yjang Wynter and I’m ready to bring your digital dreams to life. 
-              I have built landing pages, small websites, online stores, and I am very interested in designing <a href="https://www.awwwards.com/websites/three-js/" target="_blank"></a>interactive websites</a>. 
+              I have built landing pages, small websites, online stores, and I am very interested in designing <a href="https://www.awwwards.com/websites/three-js/" target="_blank" aria-label="link to three.js awwwards featured websites">interactive websites</a>. 
               So if you want to improve your online presence and stand out to your audience, please schedule a chat soon so I can use my talents to hit your targets.
             </p>
           </div>
@@ -290,14 +290,21 @@
                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
                   <h6><br>What do you need help with?</h6>
                   <br>
-                  <input type="checkbox" name="job[]" id="design" value="Front-end Design & Style Guide"
-                    data-validation-required-message="Please enter your choice" /> <label for="design">Front-end Design & Style Guide</label>
+                  <div class="form-group row">
+                    <input type="checkbox" name="job[]" id="design" value="Front-end Design & Style Guide"
+                    data-validation-required-message="Please enter your choice" /> <label for="design"  class="mx-2">Front-end Design & Style Guide</label>
+                  </div>
+                 <br> 
+                  <div class="form-group row">
+                    <input type="checkbox" name="job[]" id="development" value="Front-end Development"
+                    data-validation-required-message="Please enter your choice." /> <label for="development"  class="mx-2">Front-end Development</label>
+                  </div>
+                
                   <br>
-                  <input type="checkbox" name="job[]" id="development" value="Front-end Development"
-                    data-validation-required-message="Please enter your choice." /> <label for="development">Front-end Development</label>
-                  <br>
-                  <input type="checkbox" name="job[]" id="logo-design" value="Logo Design"
-                    data-validation-required-message="Please enter your phone number." /> <label for="logo-design">Logo Design </label>
+                  <div class="form-group row ">
+                    <input type="checkbox" name="job[]" id="logo-design" value="Logo Design"
+                    data-validation-required-message="Please enter your phone number." /> <label for="logo-design"  class="mx-2">Logo Design </label>
+                  </div>
                   <br>
                 </div>
               </div>
