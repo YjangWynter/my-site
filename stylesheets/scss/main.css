@@ -43,6 +43,9 @@ a .btn {
 .bg-primary {
   background-color: #1da526 !important;
 }
+a.bg-primary:hover {
+  background-color: #262625 !important;
+} 
 
 .bg-secondary {
   background-color: #262625 !important;
